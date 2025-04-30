@@ -193,7 +193,7 @@ function DashboardPage() {
                   color: colors.darkBlue
                 }}
               >
-                Schedule Sessionssss
+                Schedule Session
               </button>
             </div>
             
