@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import logoImage from './assets/StudyBuddy-LogoSolo.png';
+import ProgressCard from './ProgressBar';
+
 
 function DashboardPage() {
   // Color scheme
@@ -239,6 +241,17 @@ function DashboardPage() {
               >
                 Browse Resources
               </button>
+            </div>
+            {/* Progress Card Inserted Here */}
+            <div className="rounded-lg p-6 shadow-lg transition-transform hover:scale-105"
+              style={{
+                backgroundColor: 'rgba(15, 30, 60, 0.7)',
+                backdropFilter: 'blur(10px)',
+                border: `1px solid ${colors.blue}40`
+              }}
+            >
+              <h2 className="text-xl font-bold mb-3" style={{ color: colors.gold }}>Your Progress</h2>
+              <ProgressCard />
             </div>
           </div>
         </div>
