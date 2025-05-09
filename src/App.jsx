@@ -3,6 +3,7 @@ import LandingPage from './LandingPage';
 import RegisterPage from './RegisterPage';
 import LoginPage from './LoginPage';
 import DashboardPage from './DashboardPage';
+import CollaborationPage from './CollaborationPage';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/dashboard" element={<DashboardPage />} />
+        <Route path="/collaboration" element={<CollaborationPage />} />
         {/* Add more routes as needed 
         <Route path="/about" element={<div>About Page</div>} />
         <Route path="/study-guides" element={<div>Study Guides</div>} />

@@ -253,6 +253,29 @@ function DashboardPage() {
               <h2 className="text-xl font-bold mb-3" style={{ color: colors.gold }}>Your Progress</h2>
               <ProgressCard />
             </div>
+            
+            {/* Collaboration Card */}
+            <div 
+              className="rounded-lg p-6 shadow-lg transition-transform hover:scale-105"
+              style={{ 
+                backgroundColor: 'rgba(15, 30, 60, 0.7)',
+                backdropFilter: 'blur(10px)',
+                border: `1px solid ${colors.blue}40`
+              }}
+            >
+              <h2 className="text-xl font-bold mb-3" style={{ color: colors.gold }}>Collaboration</h2>
+              <p style={{ color: colors.white }}>Work together with other students.</p>
+              <button 
+                onClick={() => navigate('/collaboration')}
+                className="mt-4 py-2 px-4 rounded"
+                style={{
+                  backgroundColor: colors.gold,
+                  color: colors.darkBlue
+                }}
+              >
+                See Collaborations
+              </button>
+            </div>
           </div>
         </div>
       </main>
